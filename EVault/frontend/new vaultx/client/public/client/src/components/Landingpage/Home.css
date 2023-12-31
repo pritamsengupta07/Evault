@@ -1,0 +1,291 @@
+/* Home.css */
+
+:root {
+  --main-bg-color: #fdfafa;
+  --button-bg-color: #555;
+  --border-color: #ddd;
+  --text-color: #555;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+.home-container {
+  max-width: auto;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right:-9px;
+  min-height: 100vh;
+  
+}
+
+/* Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.vault {
+  color: rgb(150, 138, 138);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.logo {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.navbar-buttons {
+  display: flex;
+  margin-right: 10px;
+}
+
+.navbar-buttons button {
+  background-color: var(--button-bg-color);
+  color: white;
+  padding: 8px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+/* Home.css */
+
+.section1 {
+  background-color: #f0f0f0; /* Set your desired background color */
+  padding: 40px; /* Adjust the padding as needed */
+  height: 122px;
+  display: flex;
+
+  justify-content: space-between;
+
+}
+
+.section1 h2 {
+  color: #333; /* Set the text color */
+}
+.image-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 615px;
+}
+
+.justice img{
+  height: 70px;
+  display: flex;
+
+}
+
+/* Navbar-2 Styles */
+.navbar-2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: black; /* Set the background color to match the navbar */
+  color: white; /* Set the text color */
+  width: 100%;
+  top: 0;
+}
+
+/* Styles for the nav_2 section within navbar-2 */
+.nav_2 ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+.nav_2 a {
+  display: flex;
+  text-decoration: none;
+  justify-content: space-around;
+  color: white;
+  font-weight: bold;
+  font-size: 10px; /* Adjust the font size as needed */
+  transition: color 0.3s ease-in-out;
+}
+
+.nav_2 a:hover {
+  color: #ffcc00;
+}
+/* Custom Section Styles */
+.custom-section {
+  text-align: center;
+  background-color: #333;
+  height: 13rem;
+}
+
+.custom-section p {
+  color: #555;
+  margin-top: 10px;
+}
+
+/*slideshow container*/
+
+/* Carousel Styles */
+.carousel-container {
+  text-align: center;
+  margin-top: 120px;
+  
+}
+
+.logo-slogan {
+  text-align: center;
+}
+
+.carousel-logo {
+  width: 80px;
+}
+
+.slogan {
+  color: black;
+}
+
+/* Services Styles with Animation */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 57px;
+  
+}
+
+.service {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  margin: 10px;
+  flex: 0 1 calc(33.33% - 20px); /* 3 services per row on larger screens */
+}
+
+.service:hover {
+  transform: scale(1.05);
+}
+
+.service h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.service p {
+  color: #666;
+}
+
+/* Example content for services */
+.service:nth-child(1),
+.service:nth-child(2),
+.service:nth-child(3) {
+  background-color: white;
+}
+
+/* Additional Container Styles */
+.additional-container {
+  text-align: center;
+  margin-top: 20px;
+  background-color: rgba(236, 223, 223, 0.709);
+  padding: 40px;
+}
+
+.additional-container h2 {
+  color: rgb(246, 221, 221);
+}
+
+/* Assuming "fa-solid" is the class for the solid style and "fa-fingerprint" is the specific icon class */
+.icon-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+}
+
+.icon {
+  font-size: 50px;
+  color: #333;
+  margin-right: 17px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.icon1 {
+  color: rgb(67, 67, 219);
+}
+
+.icon2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.icon1 svg,
+.icon2 svg {
+  margin-bottom: 10px;
+}
+
+.flow {
+  color: rgb(7, 7, 7);
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 80px;
+}
+
+.footer-content {
+  margin: 0 auto;
+  padding: 0px;
+  background-color:black;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar-buttons button {
+    margin-left: 5px;
+  }
+
+  .custom-section {
+    padding: 20px;
+  }
+
+  .services-container {
+    justify-content: center;
+  }
+
+  .service {
+    flex: 0 1 calc(50% - 20px); /* 2 services per row on smaller screens */
+  }
+
+  .icon-container {
+    justify-content: center;
+  }
+}

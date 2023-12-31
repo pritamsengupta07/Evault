@@ -1,0 +1,45 @@
+<!-- user_detail.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Detail</title>
+</head>
+<body>
+    <h1>User Detail</h1>
+    <div id="user-detail-container">
+        <!-- User details will be displayed here dynamically -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var username = "{{ username }}";  // Pass the username from your Django view
+            var apiUrl = "combined-detail" + username + "/";
+
+            // Fetch user details from the API
+            $.ajax({
+                url: apiUrl,
+                method: "GET",
+                success: function (data) {
+                    // Display user details dynamically
+                    var userDetailHtml = "<p>Username: " + data.user.username + "</p>";
+                    userDetailHtml += "<p>Email: " + data.user.email + "</p>";
+                    // Add more fields as needed
+
+                    // Update the content of the container
+                    $("#user-detail-container").html(userDetailHtml);
+                },
+                error: function () {
+                    alert("Error fetching user details");
+                }
+            });
+        });
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+          });
+    </script>
+</body>
+</html>

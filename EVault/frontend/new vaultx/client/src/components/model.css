@@ -1,0 +1,104 @@
+.modalBackground {
+    width: 960px;
+    height: 800px;
+    background-color:white;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -1px;
+    margin-top: -101px;
+    margin-left: -65px;
+  }
+  /* Add this to your model.css */
+
+
+
+  
+  .modalContainer {
+    width: 500px;
+
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin-left: 10px;
+    margin-top: -370px;
+  }
+  
+  .modalContainer {
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+  }
+  .title {
+    display: inline-block;
+    text-align: center;
+    margin-top: 60px;
+    font-size: larger;
+    margin-bottom: 70px; /* Add space below the title */
+  }
+  
+  .titleCloseBtn {
+    display: flex;
+    justify-content: flex-end;
+    font-size: large;
+    margin-bottom: 10px; /* Add space below the titleCloseBtn */
+  }
+  
+  .titleCloseBtn button {
+    background-color: transparent;
+    border: none;
+    font-size: 1px;
+    cursor: pointer;
+  }
+  
+  .modalContainer .body {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-bottom: 20px; /* Add space below the body */
+  }
+  
+  .modalContainer .footer {
+    flex: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Add space above the footer */
+  }
+  
+  .modalContainer .footer button {
+    width: 100px;
+    height: 35px;
+    margin-left: 50px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #cancelBtn {
+    background-color: crimson;
+  }
+  
+  .address {
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    margin-top: -50px;
+  }
+  
+  
+  input[type="text"]:focus {
+    background-color: lightblue;
+  }

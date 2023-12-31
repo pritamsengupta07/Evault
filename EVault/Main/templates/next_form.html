@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        @media print {
+            body {
+                display: none;
+            }
+        
+            #no-print-message {
+                display: block !important;
+                color: red;
+                text-align: center;
+                font-size: 20px;
+                margin-top: 50px;
+            }
+        }
+        @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+        body {
+            background: #c0c0c0; 
+            font-family: Raleway, sans-serif;
+            color: #666;
+        }
+
+        .login {
+            margin: 20px auto;
+            padding: 40px 50px;
+            max-width: 600px;
+            border-radius: 5px;
+            background: #fff;
+            box-shadow: 1px 1px 1px #666;
+        }
+
+        .login input {
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+            margin: 10px 0;
+            padding: 14px 12px;
+            font-size: 16px;
+            border-radius: 2px; 
+            font-family: Raleway, sans-serif;
+        }
+
+        .login input[type=text],
+        .login input[type=password] {
+            border: 1px solid #c0c0c0;
+            transition: .2s;
+        }
+
+        .login input[type=text]:hover {
+            border-color: #F44336;
+            outline: none;
+            transition: all .2s ease-in-out;
+        } 
+
+        .login input[type=submit] {
+            border: none;
+            background: #EF5350;
+            color: white;
+            font-weight: bold;  
+            transition: 0.2s;
+            margin: 20px 0px;
+        }
+
+        .login input[type=submit]:hover {
+            background: #F44336;  
+        }
+
+        .login h2 {
+            margin: 20px 0 0; 
+            color: #EF5350;
+            font-size: 28px;
+        }
+
+        .login p {
+            margin-bottom: 40px;
+        }
+
+        .links {
+            display: table;
+            width: 100%;  
+            box-sizing: border-box;
+            border-top: 1px solid #c0c0c0;
+            margin-bottom: 10px;
+        }
+
+        .links a {
+            display: table-cell;
+            padding-top: 10px;
+        }
+
+        .links a:first-child {
+            text-align: left;
+        }
+
+        .links a:last-child {
+            text-align: right;
+        }
+
+        .login h2,
+        .login p,
+        .login a {
+            text-align: center;    
+        }
+
+        .login a {
+            text-decoration: none;  
+            font-size: .8em;
+        }
+
+        .login a:visited {
+            color: inherit;
+        }
+
+        .login a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="no-print-message" style="display: none;">Printing is not allowed on this page.</div>
+
+    <form method="post"  action="" class="login" enctype="multipart/form-data">
+        {% csrf_token %}
+        <h2>Welcome, User!</h2>
+        <p>Add More Info here</p>
+    
+        <!-- Common Fields -->
+        <label for="username">User Name:</label>
+        <input type="text" name="username" required />
+    
+        <label for="photo">Upload Photo:</label>
+        <input type="file" name="photo" accept="image/*" required />
+    
+        <label for="aadhar">Aadhar Number:</label>
+        <input type="text" name="aadhar" required />
+    
+        <label for="aadhar_photo">Upload Aadhar:</label>
+        <input type="file" name="aadhar_photo" accept="image/*" required />
+    
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" required />
+    
+        <label for="address">Address:</label>
+        <textarea name="address" required></textarea>
+    
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" required />
+    
+        <label for="city">City:</label>
+        <input type="text" name="city" required />
+    
+        <label for="state">State:</label>
+        <input type="text" name="state" required />
+
+        <input type="submit" />
+    </form>
+    <script>
+        // Add your existing script here
+
+        if (--timer < 0) {
+            clearInterval(intervalId);
+            otpForm.style.display = "none";
+            expiredMessage.style.display = "block";
+            verifyButton.disabled = true;
+            noPrintMessage.style.display = "block";
+        }
+    </script>
+</body>
+</html>

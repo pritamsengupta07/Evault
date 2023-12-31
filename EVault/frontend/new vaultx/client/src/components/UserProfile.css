@@ -1,0 +1,98 @@
+/* UserProfile.css */
+
+.App {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Change flex-direction to column */
+    align-items: center; /* Center content horizontally */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .up h1 {
+    text-align: center;
+    color: #333; /* Add color styling */
+    margin-bottom: 20px;
+  }
+  
+  .userinfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .userinfo div{
+    flex:1;
+  }
+  
+  .userinfo h2 {
+    font-size: 1.5em;
+    color: #555;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+  }
+  
+  .userinfo p {
+    margin: 10px 0;
+    color: #777;
+    font-size: 1.2em;
+  }
+  .username-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .username,
+  .name {
+    flex: 1;
+  }
+  
+  .username p,
+  .name p {
+    margin: 5px 0;
+  }
+  
+  .ph {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .ph h2 {
+    font-size: 1.5em;
+    color: #555;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .ph img {
+    width: 247px; /* Set the width as per your requirement */
+    height: 247px; /* Set the height as per your requirement */
+    /* Makes the image circular */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin: 3rem;
+
+  }
+  
+  
+  .more h2 {
+    font-size: 1.5em;
+    color: #555;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .more p {
+    margin: 10px 0;
+    color: #777;
+    font-size: 1.2em;
+  }
+  
+  /* Add more styles as needed */
+  
