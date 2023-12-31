@@ -1,69 +1,53 @@
 # Blockchain eVault for Smart India Hackathon 2023
 
 ## Overview
+This project aims to create a secure eVault utilizing blockchain technology for judges, clients, lawyers, and stakeholders. Developed for the Smart India Hackathon 2023, it employs React and Node.js for the user interface, Solidity for smart contracts on the Ethereum blockchain via MetaMask, Pinata IPFS for storage, and Django with MongoDB for the backend.
 
-This project is a secure eVault built for Smart India Hackathon 2023, designed exclusively for judges, clients, lawyers, and other stakeholders. The system ensures secure document management using blockchain, with user-friendly interfaces and robust functionalities.
+## Features
+1. **User-Friendly Interface:**
+   - Developed using React for an intuitive and responsive experience.
 
-## Technologies Used
-
-- **Frontend:**
-  - React.js for a modern and intuitive user interface.
-  - Node.js for server-side rendering and efficient handling of requests.
-
-- **Blockchain:**
-  - Solidity for developing smart contracts on the Ethereum platform.
-  - Metamask extension for seamless transaction handling.
-
-- **Storage:**
-  - Pinata IPFS for decentralized and secure document storage.
-
-- **Backend:**
-  - Django for backend development, providing a robust server.
-  - MongoDB for efficient and scalable database management.
-
-## Functionalities
-
-1. **Upload:**
-   - Users can securely upload documents to the eVault.
-
-2. **Share:**
-   - Share functionality enables easy and controlled document sharing among stakeholders.
-
-3. **Retrieve:**
-   - Retrieve option allows users to access their documents conveniently.
-
-4. **Revoke:**
-   - Users can revoke access to shared documents for enhanced control.
-
-## Installation
-
-1. **Frontend:**
-   ```bash
-   cd frontend
-   npm install
-   npm start
-   ```
-
-2. **Blockchain:**
-   - Install Metamask extension in your browser.
-   - Deploy smart contracts using Solidity on the Ethereum platform.
+2. **Blockchain Integration:**
+   - Smart contracts written in Solidity for Ethereum blockchain, ensuring transparency and security.
+   - MetaMask extension facilitates seamless transactions.
 
 3. **Storage:**
-   - Set up a Pinata IPFS account and configure the API.
+   - Utilizes Pinata IPFS for decentralized and secure file storage.
 
-4. **Backend:**
-   ```bash
-   cd backend
-   pip install -r requirements.txt
-   python manage.py runserver
-   ```
+4. **Security Features:**
+   - Disables right-click and print for enhanced document security.
+   - Implements 2-factor authentication with Aadhaar verification and OTP through email.
 
-## Future Enhancements
+5. **Functionality:**
+   - Users can upload, share, retrieve, and revoke documents securely.
 
-- Implementing additional access control features.
-- Integrating encryption for added document security.
-- Enhancing scalability for accommodating a larger user base.
+## Tech Stack
+- **Frontend:**
+  - React, Node.js
 
-## Acknowledgments
+- **Blockchain:**
+  - Solidity, Ethereum, MetaMask
 
-Thanks to Smart India Hackathon 2023 for providing the opportunity to develop this innovative eVault solution. Special gratitude to the development team for their dedication and hard work.
+- **Storage:**
+  - Pinata IPFS
+
+- **Backend:**
+  - Django, MongoDB
+
+## Usage
+1. Clone the repository.
+2. Install dependencies for frontend and backend.
+3. Set up MetaMask and connect to the Ethereum network.
+4. Deploy smart contracts using Solidity.
+5. Configure Pinata API for IPFS.
+6. Run the application.
+
+## Contributing
+Contributions are welcome. Feel free to open issues or submit pull requests.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+**Note:** Ensure to replace placeholder texts with actual details and instructions.
